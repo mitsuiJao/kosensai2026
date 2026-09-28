@@ -3,6 +3,37 @@ body {
     background-color: #ffce0b;
 }
 
+.top_header {
+    position: relative;
+    background-color: white;
+    height: 100px;
+}
+
+.site_logo_area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.site_logo_area img {
+    display: block;
+    height: 100%;                /* headerと同じ高さ */
+    width: auto;                 /* 縦横比を保つ */
+}
+
+.site_title_area {
+    flex: 1;
+    text-align: center;          /* タイトルを中央に */
+
+}
+
+.site_title_area h1 {
+    margin: 0;
+    font-size: clamp(24px, 4vw, 70px);
+}
+
+
 .wrapper {
     width: 1000px;     /* 箱の幅 */
     margin: 0 auto;    /* 左右の余白を自動にして中央寄せ */
