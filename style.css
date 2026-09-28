@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: #ffce0b;
+}
+
+.wrapper {
+    width: 1000px;     /* 箱の幅 */
+    margin: 0 auto;    /* 左右の余白を自動にして中央寄せ */
+    background-color: white;
+    min-height: 100vh;        /* 最低でも画面の高さいっぱいに伸ばす */
+    padding: 20px;            /* 板の内側に余白を作る */
+    box-sizing: border-box; 
+}
+
