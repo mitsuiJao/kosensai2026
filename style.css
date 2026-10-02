@@ -51,3 +51,7 @@ body {
     justify-content: center;
 }
 
+.debug-spacer {
+    height: 1000px;   /* 必要な分だけ調整 */
+    background-color: rgba(255, 0, 0, 0.1); /* 範囲が見えるよう仮の色（任意） */
+}
