@@ -15,7 +15,7 @@ function updateFrame() {
     chaiImg.src = `images/chai_frames/chai_${frameStr}.png`;
 
     // lassiは逆回転にする場合
-    const reverseFrame = frameCount - 1 - frame;
+    const reverseFrame = frameCount - frame;
     const reverseFrameStr = String(reverseFrame).padStart(2, "0");
     lassiImg.src = `images/lassi_frames/lassi_${reverseFrameStr}.png`;
 }
