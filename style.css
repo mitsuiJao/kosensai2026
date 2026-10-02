@@ -3,6 +3,7 @@ body {
     background-color: #ffce0b;
 }
 
+
 .top_header {
     position: relative;
     background-color: white;
@@ -48,6 +49,13 @@ body {
     color: #000;
     padding: 4px 8px;            /* クリック範囲を少し広げる */
     font-size: 20px;
+}
+
+.body{
+    border: 8px solid #333;      /* 太さ・線の種類・色 */
+    margin: 0;
+    min-height: 100vh;           /* 中身が少なくても画面の高さいっぱいまで枠を伸ばす */
+    box-sizing: border-box;      /* 枠線の太さを含めて100vhに収め，スクロールが出ないようにする */
 }
 
 
