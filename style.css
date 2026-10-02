@@ -41,3 +41,13 @@ body {
     display: flex;
     align-items: center;         /* メニューを縦方向の中央に */
 }
+
+.beverages{
+    display: flex;
+}
+
+.section_titile{
+    display: flex;
+    justify-content: center;
+}
+
