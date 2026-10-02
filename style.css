@@ -55,9 +55,18 @@ body {
     display: flex;
 }
 
+.change{
+    font-size: large;
+}
+
 .section_titile{
     display: flex;
     justify-content: center;
+    color: #fffbfb;
+    font-size: x-large;
+
+    -webkit-text-stroke: 10px rgb(94, 6, 100);
+    paint-order: stroke;
 }
 
 .debug-spacer {
