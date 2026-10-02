@@ -40,7 +40,16 @@ body {
     height: 100%;
     display: flex;
     align-items: center;         /* メニューを縦方向の中央に */
+    gap: 24px;
 }
+
+.site_menu a {
+    text-decoration: none;       /* 下線を消す */
+    color: #000;
+    padding: 4px 8px;            /* クリック範囲を少し広げる */
+    font-size: 20px;
+}
+
 
 .beverages{
     display: flex;
