@@ -61,6 +61,15 @@ body {
 
 .beverages{
     display: flex;
+    flex-wrap: wrap;           /* 入りきらない場合は折り返す */
+    justify-content: center;
+    gap: 24px;
+}
+
+.beverages img {
+    display: block;
+    width: 40vw;               /* 画面幅の40% */
+    height: auto;
 }
 
 .change{
@@ -68,14 +77,17 @@ body {
 }
 
 .section_titile{
-    background-color: rgba(32, 32, 131, 0.8);
+    /*background-color: rgba(32, 32, 131, 0.8);*/
     display: flex;
     justify-content: center;
     color: #bb0707;
     font-size: 50px;
-
     -webkit-text-stroke: 20px rgb(255, 254, 255);
     paint-order: stroke;
+}
+
+.section_titile h1{
+    transform: scaleX(1.5);    /* 横に1.5倍 */
 }
 
 .debug-spacer {
