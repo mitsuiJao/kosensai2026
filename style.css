@@ -85,11 +85,12 @@ body {
     /*border section*/
     -webkit-text-stroke: 20px rgb(255, 254, 255);
     paint-order: stroke;
-
-    margin: 100; 
+    
+    padding: 100 100;
 }
 
 .section_titile h1{
     transform: scaleX(1.5);    /* 横に1.5倍 */
+    margin: 0;
 }
 
