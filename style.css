@@ -86,10 +86,12 @@ body {
     -webkit-text-stroke: 20px rgb(255, 254, 255);
     paint-order: stroke;
 
+    padding: 0 1em; 
 
 }
 
 .section_titile h2{
+    font-size: clamp(48px, 10vw, 120px);  
     margin:0;
 }
 
