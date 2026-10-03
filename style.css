@@ -15,11 +15,14 @@ body {
     left: 0;
     top: 0;
     height: 100%;
+    /*logo padding configuration*/
+    padding:10px;
+    box-sizing: border-box /*100 - padding * 2 = height is 100% */
 }
 
 .site_logo_area img {
     display: block;
-    height: 100%;                /* headerと同じ高さ */
+    height: 100%;               /* headerと同じ高さ */
     width: auto;                 /* 縦横比を保つ */
 }
 
