@@ -92,6 +92,8 @@ body {
 
 .section_titile h2{
     font-size: clamp(48px, 10vw, 120px);  
+    font-family: "Roboto Flex", sans-serif;
+    font-stretch: 151%;
     margin:0;
 }
 
