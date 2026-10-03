@@ -6,7 +6,7 @@ body {
 
 .top_header {
     position: relative;
-    background-color: white;
+    background-color:   white;
     height: 100px;
 }
 
@@ -90,7 +90,3 @@ body {
     transform: scaleX(1.5);    /* 横に1.5倍 */
 }
 
-.debug-spacer {
-    height: 1000px;   /* 必要な分だけ調整 */
-    background-color: rgba(255, 0, 0, 0.1); /* 範囲が見えるよう仮の色（任意） */
-}
