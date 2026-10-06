@@ -10,12 +10,12 @@ body {
     gap:20px;
     background-color: white;
     box-sizing: border-box;
-    height: 100px;
+    height: 70px;
 }
 
 .site_logo_area {
     justify-self: start;/* 左寄せ */
-    height:100px;
+    height:70px;
     align-self: stretch;
     /*logo padding configuration*/
     padding:10px;
@@ -24,7 +24,7 @@ body {
 
 .site_logo_area img {
     display: block;
-    height: 100%;               /* headerと同じ高さ */
+    height: 70%;               /* headerと同じ高さ */
     width: auto;                 /* 縦横比を保つ */
 }
 
