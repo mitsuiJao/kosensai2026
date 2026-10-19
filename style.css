@@ -32,7 +32,6 @@ body {
     flex: 1;
     text-align: center;          /* タイトルを中央に */
     height: 100px;
-
 }
 
 .site_title_area h1 {
@@ -85,24 +84,35 @@ body {
     font-size: large;
 }
 
-.section_titile{
+#ryusei {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+.drifter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  will-change: transform;
+}
+
+/* .section_titile{
     background-color: rgba(32, 32, 131, 0.8);
     display: flex;
     justify-content: flex-start;
     color: #bb0707;
     font-size: 50px;
-    /*border section*/
     -webkit-text-stroke: 20px rgb(255, 254, 255);
     paint-order: stroke;
-
     padding: 0 0.2em; 
+} */
 
-}
-
-.section_titile h2{
+/* .section_titile h2{
     font-size: clamp(48px, 10vw, 120px);  
     font-family: "Roboto Flex", sans-serif;
     font-stretch: 151%;
     margin:0;
-}
+} */
 

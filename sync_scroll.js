@@ -3,12 +3,12 @@ const chaiImg = document.querySelector("#chai img");
 const lassiImg = document.querySelector("#lassi img");
 
 function updateFrame() {
-    
+    const sensitivity = 0.3;
     const scrollY = window.scrollY;
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     const progress = maxScroll > 0 ? scrollY / maxScroll : 0;
 
-    let frame = Math.floor(progress * frameCount);
+    let frame = Math.floor(progress * frameCount * sensitivity);
     frame = Math.min(Math.max(frame, 1), frameCount - 1);
 
     const frameStr = String(frame).padStart(2, "0");
