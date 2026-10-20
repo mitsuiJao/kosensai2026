@@ -9,11 +9,7 @@ body {
 
 
 .top_header {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);  
-    gap:20px;
     background-color: white;
-    box-sizing: border-box;
     height: 70px;
 }
 
