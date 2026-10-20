@@ -68,17 +68,12 @@ body {
 
 
 .beverages{
-    display: flex;
-    flex-wrap: wrap;           /* 入りきらない場合は折り返す */
+    display: flex;         
     justify-content: center;
-    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.beverages img {
-    display: block;
-    width: 40vw;               /* 画面幅の40% */
-    height: auto;
-}
 
 .change{
     font-size: large;
