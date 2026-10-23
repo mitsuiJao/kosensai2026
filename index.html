@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap"
         rel="stylesheet">
-    <!--end import-->
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,76 +16,72 @@
 </head>
 
 <body>
-    <header id="header" class="top_header">
+    <header>
         <div class="site_logo_area">
             <img src="images/kosen-logo_only.png">
         </div>
 
-        <div class="site_title_area">
-            <h1>
-                निर्माणाधीन है ...
-            </h1>
+        <h1>
+            निर्माणाधीन है ...
+        </h1>
 
-        </div>
+        <marquee class="php_discription">
+            PHP में एक सुरक्षा कमज़ोरी पाई गई है, लेकिन हमारी दुकान बंद नहीं होगी।
+        </marquee>
 
-        <nav class="site_menu">
-            <a href="#about">about</a>
-            <a href="#menu">menu</a>
-            <a href="location">location</a>
-            <a href="#delivery">delivery</a>
-            <a href="#link">link</a>
-        </nav>
     </header>
+    
     <div id="ryusei"></div>
-    <div class="body">
-        <div class="about">
-            <div class="section_titile">
-                <h2>about</h2>
-            </div>
 
-            <div class="sentences">
-                <p>
-                   
-                </p>
-            </div>
+    <div class="container">
+        <div class="about">
+            <h2 class="section_titile">about</h2>
+
+            <p class="unko-discription">
+                10/30 को KOSEN में लस्सी और CHAI बेचूँगा। कैनबिस गैरकानूनी है। लस्सी आपके खास लोगों और प्रियजनों को खुशी
+                देती है। मसाला CHAI आपको अच्छी सेहत देती है।
+            </p>
         </div>
         <div class="menu">
-            <div class="section_titile">
-                <h2>menu</h2>
-            </div>
+            <h2 class="section_titile">menu</h2>
+
             <div class="beverages">
                 <div id="chai">
                     <img src="images/chai.gif">
+                    <p class="price">400 JPY</p>
                 </div>
 
                 <div id="lassi">
                     <img src="images/lassi.gif">
+                    <p class="price">400 JPY</p>
                 </div>
-                
+
             </div>
-
-            <div class="location">
-                <div class="section_titile">
-                    <h2>location</h2>
-                </div>
-            </div>
-
-
-
-            <div class="delivery">
-                <div class="section_titile">
-                    <h2>delivery</h2>
-                </div>
-            </div>
-            <div class="link">
-                <div class="section_titile">
-                    <h2>link</h2>
-                </div>
-            </div>
-
-
         </div>
-        <script src="sync_scroll.js"></script>
-        <script src="index.js"></script>
+
+        <div class="location">
+            <h2 class="section_titile">location</h2>
+        </div>
+
+
+
+        <div class="delivery">
+            <h2 class="section_titile">delivery</h2>
+            <p class="unko-discription">   
+                デリバリーします
+                <br>
+                080-6013-4671
+            </p>
+        </div>
+        <div class="link">
+            <h2 class="section_titile">link</h2>
+            https://www.instagram.com/lassi_chai_kosen?utm_source=ig_web_button_share_sheet&vrfl=ZDNlZDc0MzIxNw==
+        </div>
+
+
+    </div>
+    <script src="sync_scroll.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
