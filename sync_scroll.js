@@ -2,24 +2,21 @@ const frameCount = 24;
 const chaiImg = document.querySelector("#chai img");
 const lassiImg = document.querySelector("#lassi img");
 
+let currentFrame = 1;
+const msPerFrame = 80;
+
 function updateFrame() {
-    const sensitivity = 0.3;
-    const scrollY = window.scrollY;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const progress = maxScroll > 0 ? scrollY / maxScroll : 0;
-
-    let frame = Math.floor(progress * frameCount * sensitivity);
-    frame = Math.min(Math.max(frame, 1), frameCount - 1);
-
-    const frameStr = String(frame).padStart(2, "0");
+    const frameStr = String(currentFrame).padStart(2, "0");
     chaiImg.src = `images/chai_frames/chai_${frameStr}.png`;
 
-    // lassiは逆回転にする場合
-    const reverseFrame = frameCount - frame;
+    const reverseFrame = frameCount - currentFrame;
     const reverseFrameStr = String(reverseFrame).padStart(2, "0");
     lassiImg.src = `images/lassi_frames/lassi_${reverseFrameStr}.png`;
+
+    currentFrame = (currentFrame % (frameCount - 1)) + 1;
 }
 
-window.addEventListener("scroll", updateFrame);
-window.addEventListener("resize", updateFrame);
-window.addEventListener("load", updateFrame);
+window.addEventListener("load", () => {
+    updateFrame();
+    setInterval(updateFrame, msPerFrame);
+});

@@ -1,111 +1,121 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: #ffce0b;
 }
 
-
-.top_header {
+header {
     min-height: 25vw;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
         "logo title ."
-        "menu menu menu";                 
-    align-items: center;          
+        "marquee marquee marquee";
+    align-items: center;
     background-color: white;
 }
 
 .site_logo_area {
     grid-area: logo;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .site_logo_area img {
-    height: 15vw;              
-    width: auto;                 /* 縦横比を保つ */
+    height: 15vw;
+    width: auto;
+    /* 縦横比を保つ */
 }
 
-.site_title_area {
+h1 {
     grid-area: title;
     display: flex;
-    justify-content: center;        
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-
-.site_menu {
-    grid-area: menu;
-    align-self: end;
-    padding-bottom: 2vw;
-    display: flex;
-    justify-content: space-around;
+.php_discription {
+    grid-area: marquee;
+    margin-inline: 5vw;
+    /* 左右だけ5vw */
 }
 
-.site_menu a {
-    text-decoration: none;       /* 下線を消す */
-    color: #000;
-    font-size: 4vw;
-}
-
-.body{
-    border: 8px solid #333;      /* 太さ・線の種類・色 */
+.container {
+    border: 8px solid #333;
+    /* 太さ・線の種類・色 */
     margin: 0;
-    min-height: 100vh;           /* 中身が少なくても画面の高さいっぱいまで枠を伸ばす */
-    box-sizing: border-box;      /* 枠線の太さを含めて100vhに収め，スクロールが出ないようにする */
+    min-height: 100vh;
+    /* 中身が少なくても画面の高さいっぱいまで枠を伸ばす */
+    box-sizing: border-box;
+    /* 枠線の太さを含めて100vhに収め，スクロールが出ないようにする */
 }
 
+/* 見出し：h2.section_titile と div.section_titile の両方に対応 */
+.section_titile {
+    display: flex;
+    justify-content: flex-start;
+    color: #bb0707;
+    font-size: clamp(48px, 10vw, 120px);
+    font-family: "Roboto Flex", sans-serif;
+    font-stretch: 151%;
+    -webkit-text-stroke: 20px rgb(255, 254, 255);
+    paint-order: stroke;
+    padding: 0 0.2em;
+}
 
-.beverages{
-    display: flex;         
+/* div.section_titile の中に h2 がある場合（link） */
+.section_titile h2 {
+    font: inherit;
+    margin: 0;
+}
+
+.unko-discription {
+    margin: 2vw;
+}
+
+.beverages {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: "Ranchers", sans-serif;
 }
 
 .beverages img {
     width: 100%;
 }
 
-.change{
-    font-size: large;
-}
-
 #ryusei {
-  position: fixed;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 10;
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 10;
 }
+
+/* index.js で生成される要素用 */
 .drifter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  will-change: transform;
+    position: absolute;
+    left: 0;
+    top: 0;
+    will-change: transform;
 }
 
-/* .section_titile{
-    background-color: rgba(32, 32, 131, 0.8);
-    display: flex;
-    justify-content: flex-start;
-    color: #bb0707;
-    font-size: 50px;
-    -webkit-text-stroke: 20px rgb(255, 254, 255);
-    paint-order: stroke;
-    padding: 0 0.2em; 
-} */
-
-/* .section_titile h2{
-    font-size: clamp(48px, 10vw, 120px);  
-    font-family: "Roboto Flex", sans-serif;
-    font-stretch: 151%;
-    margin:0;
-} */
-
+video {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
