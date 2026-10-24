@@ -85,17 +85,50 @@ h1 {
     flex-wrap: wrap;
 }
 
-.price {
+
+.beverage_name {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
-    font-family: "Ranchers", sans-serif;
+    font-size: 10vw;
+
 }
 
 .beverages img {
     width: 100%;
 }
+
+.container_price {
+    display: flex;
+    align-items: baseline;   /* 文字の下端を揃える */
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin: 0 5vw;
+}
+
+.discount_badge {
+    align-self: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #e1120f;
+    color: #fff;
+    font-size: 4vw;
+
+}
+
+.price_discount {
+    font-size: 5vw;
+    color: #6b6b6b;
+    text-decoration-color: #e53935;  /* 打ち消し線を赤に */
+    text-decoration-thickness: 0.12em;
+}
+
+.price {
+    font-size: 15vw;
+    font-family: "Ranchers", sans-serif;
+    color: rgb(25, 170, 25);
+}
+
 
 #ryusei {
     position: fixed;
