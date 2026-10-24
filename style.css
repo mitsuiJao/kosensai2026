@@ -85,12 +85,17 @@ h1 {
     flex-wrap: wrap;
 }
 
+.container_beverage {
+    margin-bottom: 10vw;
+}
+
 
 .beverage_name {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10vw;
+    font-family: "Ranchers", sans-serif;
 
 }
 
