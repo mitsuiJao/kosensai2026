@@ -145,3 +145,10 @@ h1 {
     top: 0;
     will-change: transform;
 }
+
+video {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+}
