@@ -96,6 +96,14 @@ h1 {
     justify-content: center;
 }
 
+#math {
+    font-family:'Times New Roman', Times, serif;
+}
+
+#equation {
+    margin:0 10vw;
+}
+
 .beverages {
     display: flex;
     justify-content: center;
