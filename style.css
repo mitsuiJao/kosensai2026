@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Yatra One", system-ui;
+    font-size: 6vw;
 }
 
 body {
@@ -158,4 +160,8 @@ video {
     margin: 0 auto;
     width: 90%;
     height: auto;
+}
+
+.phone_number {
+    font-size: 8vw;
 }
