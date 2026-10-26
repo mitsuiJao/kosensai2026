@@ -76,8 +76,34 @@ h1 {
     margin: 0;
 }
 
-.unko-discription {
+
+.about_discription {
     margin: 2vw;
+}
+
+#container_akiba {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#akiba {
+    width: 70vw;
+    margin: 0 5vw;
+}
+
+#akiba_introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #math {
+    font-family:'Times New Roman', Times, serif;
+} */
+
+#equation {
+    margin:0 10vw;
 }
 
 .beverages {
@@ -90,6 +116,7 @@ h1 {
 .container_beverage {
     margin-bottom: 10vw;
 }
+
 
 
 .beverage_name {

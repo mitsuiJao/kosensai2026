@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -35,13 +36,18 @@
     <div id="ryusei"></div>
 
     <div class="container">
-        <div class="about">
-            <h2 class="section_titile">about</h2>
+        <div id="about">
+            <h2 class="section_titile">about us</h2>
 
-            <p class="unko-discription">
-                10/30 को KOSEN में लस्सी और CHAI बेचूँगा। कैनबिस गैरकानूनी है। लस्सी आपके खास लोगों और प्रियजनों को खुशी
-                देती है। मसाला CHAI आपको अच्छी सेहत देती है।
-            </p>
+            <p class="about_discription">ハロー!!! 私たちのウェブサイトへようこそ!</p>
+            <p class="about_discription">私たちのプロフェッショナルな技術で最高のチャイとラッシーを提供します．</p>
+            <div id="container_akiba">
+                <img src="./images/akiba.JPG" id="akiba">
+            </div>
+            <p id="akiba_introduction">मुख्य शेफ: आकिबा सोकी</p>
+            <p id="math" class="about_discription">Let E denote the energy delivered to the drinker, M the volume of milk, and C the strength of the chai. We postulate that </p>
+            <p id="equation">$$ E=mc^2 \tag{1} $$</p>
+            
         </div>
         <div class="menu">
             <h2 class="section_titile">menu</h2>
@@ -49,7 +55,7 @@
             <div class="beverages">
                 <div id="chai" class="container_beverage">
                     <p class="beverage_name">CHAI</p>
-                    <img src="images/chai.gif">
+                    <img src="images/camel.jpeg">
                     <div class="container_price">
                         <span class="discount_badge">68%-</span>
                         <s class="price_discount">¥1250</s>
@@ -59,7 +65,17 @@
 
                 <div id="lassi" class="container_beverage">
                     <p class="beverage_name">LASSI</p>
-                    <img src="images/lassi.gif">
+                    <img src="images/camel.jpeg">
+                    <div class="container_price">
+                        <span class="discount_badge">75%-</span>
+                        <s class="price_discount">¥1200</s>
+                        <p class="price">300 JPY</p>
+                    </div>
+                </div>
+
+                <div id="mango_lassi" class="container_beverage">
+                    <p class="beverage_name">MANGO LASSI</p>
+                    <img src="images/camel.jpeg">
                     <div class="container_price">
                         <span class="discount_badge">88%-</span>
                         <s class="price_discount">¥2490</s>
@@ -70,10 +86,12 @@
             </div>
         </div>
 
+
+
         <div class="delivery">
             <h2 class="section_titile">delivery</h2>
             <p class="unko-discription">
-                I will deliver it to you! Call me!
+                We will deliver it to you! Call me!
                 <br>
             <div class="phone_number">
                 <a href="tel:+818060134671">+81-80-6013-4671</a>
@@ -83,7 +101,7 @@
 
         <div class="location">
             <h2 class="section_titile">location</h2>
-            <video src="images/video.mp4" autoplay muted loop></video>
+            <video src="images/video.mp4" autoplay muted playsinline loop></video>
         </div>
 
         <div class="link">
@@ -97,7 +115,7 @@
 
 
     </div>
-    <script src="sync_scroll.js"></script>
+    <script src="rotate_beverages.js"></script>
     <script src="index.js"></script>
 </body>
 
